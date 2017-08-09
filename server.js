@@ -9,6 +9,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/read', function (req,res){
+    res.send('Pulse and digital circuits');
+});
+
+app.get('/write', function (req,res){
+    res.send('Duvada jagganadam');
+});
+
+app.get('/comic', function (req,res){
+    res.send('Jai Mahishmathi');
+});
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
