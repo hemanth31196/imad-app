@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/read', function (req,res){
-    res.send('Pulse and digital circuits');
+   res.sendFile(path.join(__dirname, 'ui', 'exp2.html'));
 });
 
 app.get('/write', function (req,res){
