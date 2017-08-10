@@ -14,13 +14,12 @@ app.get('/read', function (req,res){
 });
 
 app.get('/write', function (req,res){
-    res.send('Duvada jagganadam');
+    res.sendFile(path.join(__dirname, 'ui', 'exp2.html'));
 });
 
 app.get('/comic', function (req,res){
-    res.send('Jai Mahishmathi');
+    res.sendFile(path.join(__dirname, 'ui', 'exp3.html'));
 });
-
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
